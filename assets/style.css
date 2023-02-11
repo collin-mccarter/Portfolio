@@ -1,0 +1,37 @@
+:root {
+    --grey: #9bafb5;
+    --white: #ffffff;
+    --dark-grey: #404040; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+section {
+    margin: 20px;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 150%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--dark-grey);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
