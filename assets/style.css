@@ -63,7 +63,7 @@ nav ul li a {
     border-color: var(--dark-grey);
 }
 
-p {
+p, figcaption{
     margin-top: 10px;
     font-size: 18px;
     color: black;
@@ -81,20 +81,30 @@ p {
     margin-bottom: 1%;
     margin-left: auto;
     margin-right: auto;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--dark-grey);
 }
 
 .project1-img {
     height: 300px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--dark-grey);
 }
 
 .prework-img {
     height: 250px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--dark-grey);
 }
 
 .parentContainer {
     position: relative;
     text-align: center;
     color: white;
+    margin: 10px;
 }
 
 .contact-info-alignment {
@@ -110,4 +120,14 @@ p {
     text-decoration: none;
     background-color: var(--white);
     color: black;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+  
+.column {
+    flex: 50%;
+    padding: 5px;
 }
