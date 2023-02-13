@@ -64,14 +64,21 @@ nav ul li a {
 }
 
 p {
+    margin-top: 10px;
     font-size: 18px;
+    color: black;
+    background-color: #ffffff;
+    padding: 1%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--dark-grey);
 }
 
 .profile-photo {
     max-height: 300px;
     display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -88,4 +95,19 @@ p {
     position: relative;
     text-align: center;
     color: white;
+}
+
+.contact-info-alignment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1%;
+    color: var(--white);
+    background-color: var(--dark-white);
+}
+
+.github-color {
+    text-decoration: none;
+    background-color: var(--white);
+    color: black;
 }
