@@ -137,4 +137,36 @@ p, figcaption{
     header, .row {
       flex-direction: column;
     }
-  }
+}
+
+@media screen and  (max-width: 660px) {
+    .project1-img {
+        height: 150px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: var(--dark-grey);
+    }
+
+    .prework-img {
+        height: 125px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: var(--dark-grey);
+    }
+}
+
+@media screen and  (max-width: 400px) {
+    .project1-img {
+        height: 150px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: var(--dark-grey);
+    }
+
+    .prework-img {
+        height: 125px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: var(--dark-grey);
+    }
+}
