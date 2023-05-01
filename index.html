@@ -7,69 +7,254 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
-    <!-- title of webpage/project  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>McCarter Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <h1>Collin McCarter</h1>
-        <nav>
-            <ul>
-                <!-- nav links to various sections -->
-                <li><a href="#AboutMe">About Me</a></li>
-                <li><a href="#Work">Work</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <!-- <li><a href="#Resume">Resume</a></li>  for later addition -->
-            </ul>
-        </nav>
-    </header>
-    <!-- main profile image of myslef -->
-    <img class=profile-photo src="./assets/images/collinsaintkitts.jpg" alt="Profile Image of Myself"/>
+    <!-- nav bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Collin McCarter</span>
+            </div>
+            <a class="navbar-brand" href="#AboutMe">About Me</a>
+            <a class="navbar-brand" href="#Education">Education</a>
+            <a class="navbar-brand" href="#Work">Work</a>
+            <a class="navbar-brand" href="#ContactMe">Contact Me</a>
+            <a class="navbar-brand" href="#">Resume</a>
+        </div>
+    </nav>
 
-    <section> <!-- sections for About Me information -->
-        <h2 id="AboutMe">About Me:</h2>
-        <p>My name is Collin McCarter and I was born and raised in Dallas, Texas. I went to college at Oklahoma State University in the year 2018 and I graduated with a bachelors in Animal Science. My previous work experience was in summers of 2019 and 2020, I was a lifeguard and manager at the Holmes Aquatic Center where I led a team of 20 individuals and my daily tasks were to keep the facility operational and make sure everything ran smoothly. Hobbies of mine include videogames, working out to improve my mental and physical wellbeing, and watching great shows on HBO and Crunchyroll! I want to persue a career in software engineering because it has always been something that has interested me. Only recently did I decide to change career paths and persue this long time dream of mine to make it finally a reality!</p>
-        
-    </section>
+    <!-- Recent Image -->
+    <img src="./assets/images/RecentPhoto.png" class="img-fluid mx-auto d-block" id="recentPhoto" alt="...">
 
-    <section> <!-- work section -->
-        <h2 id="Work">Work:</h2>
-        
-        <div class="parentContainer"> <!-- Project 1 info and screenshot -->
-            <div class="row">
-                <a href="https://collin-mccarter.github.io/Project-1/">
-                <img src="./assets/images/Screenshot-PJ1.png" alt="Project 1" class="project1-img">
-                <figcaption>Project 1</figcaption>
-                </a>
+    <!-- About Me -->
+    <div class="container" id="AboutMe">
+        <h2 class="h2">About Me:</h2>
+        <p class="lead">
+            My name is Collin McCarter and I am a recent gradutate of a Full-Stack Web Development Coding Bootcamp throught the Univeristy of Texas at Austin.
+            I wanted to be a Full-Stack Web Developer becuase I am driven by a passion for problem solving, collaborating, and most importantly, incorporating creativity into web design.
+            Since gradutating, I have a strong passion and desire to apply what I have learned over the course of the bootcamp and to continue to gain as much knowledge and expierence as I can about web development!
+        </p>
+    </div>
+
+    <!-- Education -->
+    <div class="container" id="Education">
+        <h2 class="h2">Education:</h2>
+        <p class="lead">
+            <dl class="row">
+                <dt class="col-sm-5">Coding Bootcamp - University of Texas at Austin </dt>
+                <dd class="col-sm-3">
+                    <p>Certificate - Full Stack Developer</p>
+                    <p>January 2023 - July 2023</p>
+                </dd>
+
+                <dt class="col-sm-5">Oklahoma State University - Stillwater Oklahoma </dt>
+                <dd class="col-sm-6"> 
+                    <p>Bacherlor of Science In Agriculture - Animal Science</p>
+                    <p>Graduated: May 2022</p>
+                    <p>GPA: 3.340</p>
+                </dd>
+            </dl>    
+        </p>
+    </div>
+
+    <!-- Projects -->
+    <div class="container" id="Work">
+        <h2 class="h2">Works:</h2>
+
+        <!-- featured project -->
+        <div class="card text-center card text-white bg-dark mb-3">
+            <div class="card-header">
+              <h3>Featured Project</h3>
+            </div>
+            <div class="card-body">
+                <img src="./assets/images/BeatSpotify.png" class="card-img-top" alt="...">
+                <h5 class="card-title">Beat Spotify</h5>
+                <p class="card-text">The application is a lighthearted game designed to use two server-side APIs that provides the album images for a user and also uses another API to search for song lyrics. The goal of the game is to guess as many songs correct in a row, and your score will be logged in a local highscore table.</p>
+            </div>
+            <div class="card-footer text-muted">
+              Last Updated: March 27, 2023
             </div>
         </div>
 
-        <div class="row"> <!-- 2nd project information/screenshot -->
-            <div class="parentContainer" class="column">
-                <a href="https://collin-mccarter.github.io/prework/">
-                <img src="./assets/images/Screenshot-Prework.png" alt="Prework Study Guide" class="prework-img">
-                <figcaption>Prework Study Guide</figcaption>
-                </a>
-             </div>
-             
-             <div class="parentContainer" class="column"> <!-- Filler area for new projects to be added below -->
-                <a href="https://www.youtube.com/watch?v=XdACz7fG_ak&ab_channel=MijoBrando">
-                <img src="./assets/images/staytuned.gif" alt="More Projects Coming" class="prework-img">
-                <figcaption>More Coming Soon!</figcaption>
-                </a>
+        <!-- grid of projects -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card text-white bg-dark h-100">
+                    <img src="./assets/images/Project1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">The purpose of this project was to revise the code given to us for the Horiseon social media marketing webpage. To accomplis this, semantic html was used as a means for optimizing this search engine capabilties for this website and to make this code base more assessible for editors and users.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated: Febuary 6, 2023</small>
+                    </div>
+              </div>
             </div>
-        </div>
-    </section>
 
-    <section> <!-- Contact me information and links -->
-        <h2 id="Contact">Contact Me:</h2>
-        <ul class="contact-info-alignment">
-            <li class="contact-info">Phone: (214)538-2433</li>
-            <li class="contact-info">Email: collinmccarter12@gmail.com</li>
-            <li class="contact-info"><a href="https://github.com/collin-mccarter" class="github-color">Github</a></li>
-        </ul>
-    </section>
+            <div class="col">
+                <div class="card text-white bg-dark h-100">
+                    <img src="./assets/images/OldPortfolio.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">First Portfolio Project</h5>
+                        <p class="card-text">The purpose of this project was for me to create my own code from scratch and to create a portfolio page that I'll be able to modify and add to later on as the course progresses.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated: Febuary 16, 2023</small>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col">
+                <div class="card text-white bg-dark h-100">
+                    <img src="./assets/images/Project3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Password Generator</h5>
+                        <p class="card-text">This is an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated: Febuary 27,2023</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card text-white bg-dark h-100">
+                    <img src="./assets/images/Project4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Coding Quiz</h5>
+                        <p class="card-text">The main purpose of this project was to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that I write. It will have a clean, polished, and responsive user interface.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated: March 5, 2023</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card text-white bg-dark h-100">
+                    <img src="./assets/images/Project5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Work Day Scheduler</h5>
+                        <p class="card-text">The goal of this project was to create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. I used the Day.js library to work with date and time.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated: March 12, 2023</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card text-white bg-dark h-100">
+                    <img src="./assets/images/Project6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Weather Dashboard</h5>
+                        <p class="card-text">The goal of this project was to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. Using the 5 Day Weather Forecast, I was able retrieve weather data for cities.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated: March 20, 2023</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card text-white bg-dark h-100">
+                    <img src="./assets/images/ReadMe.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ReadMe Generator</h5>
+                        <p class="card-text">You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project. The task was to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated: April 9, 2023</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card text-white bg-dark h-100">
+                    <img src="./assets/images/Project8.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SVG Logo Maker</h5>
+                        <p class="card-text">The goal of this project was to build a Node.js command-line application that takes in user input to generate a logo and save it as an SVG file. The application prompts the user to select a color and shape, provide text for the logo, and save the generated SVG to a .svg file.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated: April 17, 2023</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white bg-dark h-100">
+                    <img src="./assets/images/Project9.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Note Taker</h5>
+                        <p class="card-text">The goal of this project was to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated: April 24, 2023</small>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col">
+                <div class="card text-white bg-dark h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 10</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white bg-dark h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 11</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white bg-dark h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 12</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div> -->
+        </div>        
+    </div>
+
+    <!-- Contact Me -->
+    <div class="container" id="ContactMe">
+        <h2 class="h2">Contact Me:</h2>
+        <dl class="row">
+            <dt class="col-sm-3">Phone Number:</dt>
+            <dd class="col-sm-9">(214)538-2433</dd>
+
+            <dt class="col-sm-3">Email:</dt>
+            <dd class="col-sm-9">collinmccarter12@gmail.com</dd>
+
+            <dt class="col-sm-3">GitHub:</dt>
+            <dd class="col-sm-9">
+                <a href="https://github.com/collin-mccarter" class="btn btn-dark btn-small" tabindex="-1" role="button" aria-disabled="true">GitHub</a>
+            </dd>
+
+            <dt class="col-sm-3">LinkedIn:</dt>
+            <dd class="col-sm-9">
+                <a href="https://www.linkedin.com/in/collin-mccarter-ab441b271/" class="btn btn-dark btn-small" tabindex="-1" role="button" aria-disabled="true">LinkedIn</a>
+            </dd>
+        </dl>
+    </div>
 </body>
 </html>
