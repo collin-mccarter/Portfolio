@@ -5,3 +5,11 @@ body {
 .container {
     padding-bottom: 25px;
 }
+
+#recentPhoto {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    max-width: 75%;
+}
